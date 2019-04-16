@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻首页</title>
+    <link href="../resources/css/one.css" rel="stylesheet">
+</head>
+<body>
+<div class="news-nav">
+    <span><a href="one" style="color: #84c3ff">news</a></span>
+    <span><a href="#">past</a></span>
+    <span><a href="#">show</a></span>
+    <span><a href="#">comment</a></span>
+    <span><a href="#">ask</a></span>
+    <span><a href="#">jobs</a></span>
+    <span><a href="/two">submit</a></span>
+    <span><a href="#">2019-3-1</a></span>
+</div>
+ <div class="container">
+     <ul>
+         <%for(var i=0;i< list.length;i++){%>
+
+         <div class="content">
+             <a href="/three?id=<%= list[i].id %>">
+                 <li class="title"><%=list[i].title%><span style="font-size: 16px;border: none">(lion137.blogspot.com)</span></li>
+             </a>
+             <li class="date">	174 points by tu7001 1 day ago | hide | 16 comments</li>
+         </div>
+         <%}%>
+     </ul>
+ </div>
+</body>
+</html>

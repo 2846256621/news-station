@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情</title>
+    <link href="../resources/css/three.css" rel="stylesheet">
+</head>
+<body>
+<div id="body">
+    <div class="news-nav">
+        <span><a href="/one">news</a></span>
+        <span><a href="#">past</a></span>
+        <span><a href="#">show</a></span>
+        <span><a href="#">comment</a></span>
+        <span><a href="#">ask</a></span>
+        <span><a href="#">jobs</a></span>
+        <span><a href="/two">submit</a></span>
+        <span><a href="#">2019-3-1</a></span>
+    </div>
+    <div class="container">
+        <ul style="list-style: none;padding-left: 0">
+            <div class="content">
+                <li class="title"><%=item.title%><button id="delete">删除此新闻</button> <button id="modify"><a href="/four?id=<%=item.id%>">修改此新闻</a></button></li>
+                <hr>
+                <li class="text"><pre><%=item.text%></pre></li>
+                <hr>
+            </div>
+        </ul>
+    </div>
+</div>
+<script src="../resources/javascript/three.js"></script>
+<script src="../resources/javascript/four.js"></script>
+</body>
+</html>

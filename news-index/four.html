@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改新闻</title>
+    <link rel="stylesheet" href="../resources/css/two.css">
+</head>
+<body>
+<div id="body">
+    <div class="news-nav">
+        <span><a href="/one">news</a></span>
+        <span><a href="#">past</a></span>
+        <span><a href="#">show</a></span>
+        <span><a href="#">comment</a></span>
+        <span><a href="#">ask</a></span>
+        <span><a href="#">jobs</a></span>
+        <span><a href="/two" >submit</a></span>
+        <span><a href="#">2019-3-1</a></span>
+    </div>
+    <form class="container" method="get" action="/modify">
+        <span>title:</span><input class="title" type="text" value="<%=list.title%>" name="title" placeholder="please write title..."><br>
+        <span>text:</span><textarea class="text text2" name="text"  placeholder="please write your news..."><%=list.text%></textarea>
+        <input type="button" value="提交修改" class="submit btn">
+    </form>
+</div>
+<script src="../resources/javascript/four.js"></script>
+</body>
+</html>

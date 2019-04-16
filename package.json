@@ -1,0 +1,10 @@
+{
+  "name": "news-node-work",
+  "version": "1.0.0",
+  "dependencies": {
+    "mime": "^2.4.0",
+    "querystring": "^0.2.0",
+    "underscore": "^1.9.1",
+    "url": "^0.11.0"
+  }
+}
